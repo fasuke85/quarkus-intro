@@ -1,0 +1,25 @@
+###
+# Api som gir oss IDene på de beste (og nye) sakene fra Hackernews
+GET https://hacker-news.firebaseio.com/v0/topstories.json
+
+###
+# Gir oss innholdet på en sak for en gitt ID
+GET https://hacker-news.firebaseio.com/v0/item/29315414.json
+
+
+###
+# Endepunkt A: Henter og returnerer alle IDene som i topstories.json
+GET http://localhost:9000/hn/top-stories
+
+###
+# Endepunkt B: Gir innholdet på de x første topp-sakene
+GET http://localhost:9000/hn/top-stories/details?first=10
+
+
+###
+# Endepunkt C: Henter og returnerer alle IDene som i topstories.json
+GET http://localhost:9000/hn/async/top-stories
+
+###
+# Endepunkt B: Gir innholdet på de x første topp-sakene
+GET http://localhost:9000/hn/async/top-stories/details?first=10
